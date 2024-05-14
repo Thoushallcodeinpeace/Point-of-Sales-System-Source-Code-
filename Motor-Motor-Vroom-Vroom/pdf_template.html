@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Template</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+        
+        body {
+            font-family: "Oswald";
+            margin: 20px;
+        }
+        .header {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .header .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .header .date-period,
+        .header .generated-at {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .logo {
+            width: 100px;
+            height: 100px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="uploads/logo-circle.png" class="logo" alt="Logo">
+        <div class="title">4JS Motorcycle Parts and Accessories</div>
+        <div class="date-period">Date Period: <span id="datePeriod"></span></div>
+        <div class="generated-at">Generated At: <span id="generatedAt"></span></div>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Subtotal</th>
+                <th>Created At</th>
+            </tr>
+        </thead>
+        <tbody id="transactionsBody">
+        </tbody>
+    </table>
+</body>
+</html>
